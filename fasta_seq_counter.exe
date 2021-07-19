@@ -1,0 +1,6 @@
+#script prints the number of seq in a fasta file
+for file in *.fas; do 
+	echo $file
+	grep -c '>' $file
+done
+
